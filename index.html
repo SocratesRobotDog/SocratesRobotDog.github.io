@@ -56,7 +56,6 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <section>
 
         <div class="container">
-            <h3><b>To be appear in ICRA 2023</b></h3>
             <p style="text-align:center;">
                 <video id="v0" width="80%" playsinline="" autoplay="" muted="" loop="" controls="">
                    <source src="./assets/intro.mp4" type="video/mp4">
@@ -103,6 +102,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                     <source src="./assets/starter.mp4" type="video/mp4">
                 </video>
             </p>
+            The problem is separated into search and approach phases.
 
             <h4>Assumption and Input of the System</h4>
                 <figure class="figure text-center">
@@ -111,16 +111,25 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                 </figure>
             
             <h3><b>Human Search Socratic Model</b></h3>
-            <figure class="figure text-center">
-                <img src="./assets/search.jpg" style="width: 90%">
-                <figcaption class="figure-caption text-center">Human Search Socoratic Model</figcaption>
-            </figure>
+                <figure class="figure text-center">
+                    <img src="./assets/search.jpg" style="width: 80%">
+                    <figcaption class="figure-caption text-center">Human Search Socoratic Model</figcaption>
+                </figure>
+                The Human Search Socratic Model is composed of three key components: a large-language model, a vision-language model, and a waypoint generator. 
+                The large-language model takes the description of a target person and estimates the search prior, 
+                whereas the vision-language model processes images and descriptions to localize the target person. 
+                Lastly, the waypoint generator commands the robotic actions with the search prior and the detection results.
             
             <h3><b>Hybrid Learning Based Human Approach</b></h3>
                 <figure class="figure text-center">
-                    <img src="./assets/approach.jpg" style="width: 50%">
+                    <img src="./assets/approach.jpg" style="width: 80%">
                     <figcaption class="figure-caption text-center">Hybrid Learning Based Human Approach</figcaption>
                 </figure>
+                We propose a hybrid learning-based framework for generating a cordial approach motion to a target person. 
+                Target-friendly approach motions are an essential part of the "human search and approach" task since the robot has to move to a reachable position within the range of the 
+                target person without appearing threatening or distracting him/her. The proposed hybrid learning-based framework consists of two different modules: 
+                learning from demonstration (LfD) and knowledge distillation. Both modules estimate the reward function of the state space for a confiding approach trajectory and are 
+                combined to a final reward function. Next, the path planner conducts cost-aware planning based on the estimated reward function and sends actions (velocity commands) to the robot.
             
             
         </div>
@@ -130,11 +139,10 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <div class="container">
             <h2><b>Experiments</b></h2>
             <h5>Environment Setting</h5>>
-            <p style="text-align:center;">
-                <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
-                    <source src="./assets/" type="video/mp4">
-                </video>
-            </p>
+            <figure class="figure text-center">
+                <img src="./assets/env.jpg" style="width: 70%">
+                <figcaption class="figure-caption text-center">Environment</figcaption>
+            </figure>
             <h4>Realword Demonstrations</h4>
             <br>
             <p style="text-align:center;">
