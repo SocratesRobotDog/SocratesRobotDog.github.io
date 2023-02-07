@@ -82,7 +82,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
     <section>
         <div class="container">
-            <h3><b>Full Video</b></h3>
+            <h2><b>Full Video</b></h2>
             TBD
             <!-- <div class="col-12 text-center">
                 <div class="video_wrapper">
@@ -110,7 +110,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                     <figcaption class="figure-caption text-center">input</figcaption>
                 </figure>
             
-            <h3><b>Human Search Socratic Model</b></h3>
+            <h4>Human Search Socratic Model</h4>
                 <figure class="figure text-center">
                     <img src="./assets/search.jpg" style="width: 80%">
                     <figcaption class="figure-caption text-center">Human Search Socoratic Model</figcaption>
@@ -120,7 +120,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                 whereas the vision-language model processes images and descriptions to localize the target person. 
                 Lastly, the waypoint generator commands the robotic actions with the search prior and the detection results.
             
-            <h3><b>Hybrid Learning Based Human Approach</b></h3>
+            <h4>Hybrid Learning Based Human Approach</h4>
                 <figure class="figure text-center">
                     <img src="./assets/approach.jpg" style="width: 80%">
                     <figcaption class="figure-caption text-center">Hybrid Learning Based Human Approach</figcaption>
@@ -138,27 +138,37 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <section>
         <div class="container">
             <h2><b>Experiments</b></h2>
-            <h5>Environment Setting</h5>>
+            <h5>Environment Setting</h5>
             <figure class="figure text-center">
-                <img src="./assets/env.jpg" style="width: 70%">
+                <img src="./assets/env.jpg" style="width: 40%">
                 <figcaption class="figure-caption text-center">Environment</figcaption>
             </figure>
+            We use a Spot robot mounted with a Luxonis OAK-D-Pro camera. 
+            The real-world environment setting is a robotics lab environment, five different annotations of the floorplan are used to distinguish locations in the lab.
+
             <h4>Realword Demonstrations</h4>
             <br>
+            <b>Demonstration of the proposed method</b>
             <p style="text-align:center;">
                 <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
                     <source src="./assets/method.mp4" type="video/mp4">
                 </video>
             </p>
             <br>
+            <b>Result illustratations</b>
             <figure class="figure text-center">
                 <img src="./assets/demo.jpg" style="width: 70%">
                 <figcaption class="figure-caption text-center">Demonstrations</figcaption>
             </figure>
+            Illustration of the Experimental Results. 
+            (a) shows the exemplary demonstrations of the proposed search module. The circles represent waypoints. 
+            (b) shows how the trajectories vary between methods. Circles represent waypoints and the circles with dashed lines represent the viewpoint that contained the false detection. 
+            (c) illustrates the proposed human approaching motion on gaze condition and how trajectories differ from a different method.
             <br>
 
             <h4>Search Demonstrations</h4>
             <br>
+            
             <p style="text-align:center;">
                 <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
                     <source src="./assets/demo1.mp4" type="video/mp4">
