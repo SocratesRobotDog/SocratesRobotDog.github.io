@@ -1,198 +1,192 @@
 <!DOCTYPE html>
 
-<html lang="en" class="weava-extension-context" data-weava-installed="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
-</style><style data-merge-styles="true"></style>
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> SOCRATES: Text-based Human Search and Approach using a Robot Dog </title>
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
-<style>[_nghost-brs-c79]{height:100vh}.weava-ui-wrapper-new[_ngcontent-brs-c79]{box-shadow:#0006 -1px 3px 60px;position:fixed;top:0;opacity:.99;left:initial;right:-580px;display:block;width:340px;min-width:auto;height:100vh;z-index:9999999999996!important;background:white;border:none;box-sizing:border-box;transition:1s}.weava-ui-wrapper-new[_ngcontent-brs-c79] > *[_ngcontent-brs-c79]{display:flex}.weava-ui-wrapper-new.show[_ngcontent-brs-c79]{right:0;transition:1s}.weava-ui-wrapper-new.show.folder-show[_ngcontent-brs-c79]{width:580px!important}ngb-toast.weava-notification-frame[_ngcontent-brs-c79]{box-shadow:#0006 -1px 3px 45px!important;position:fixed!important;left:initial!important;top:20px!important;right:20px!important;width:300px!important;border-radius:4px!important;background-color:#142733!important;transition:all .3s ease!important;z-index:999}</style><style></style><style>#clipperButton[_ngcontent-brs-c82]{font-size:30px!important;line-height:30px!important;width:30px!important;height:30px!important;text-align:center!important;z-index:2147483647!important;position:absolute!important;top:5px!important;right:5px!important;padding:0!important;background:midnightblue!important;color:#fff!important;border:none!important;outline:none!important;border-radius:50%!important}.weava-drop-area-wrapper[_ngcontent-brs-c82]{position:fixed!important;z-index:2147483647!important;top:50%!important;width:70px!important;padding-left:10px;left:-10px;background-color:#142733!important;transition:left .2s!important;opacity:0;display:flex;flex-direction:column;justify-content:center}.weava-drop-area-wrapper.weava-drop-area-wrapper-show[_ngcontent-brs-c82]{opacity:1}.weava-drop-area-wrapper.weava-drop-area-wrapper-drag-over[_ngcontent-brs-c82]{left:0}.weava-drop-area[_ngcontent-brs-c82]{display:inline-flex;justify-content:center;height:50px!important;background-color:#142733!important}.weava-drop-area[_ngcontent-brs-c82] > img[_ngcontent-brs-c82]{max-width:80%;margin:3px}.weava-drop-area-text[_ngcontent-brs-c82]{font-weight:bold!important;padding:7px 0!important;text-align:center!important;background-color:#142733!important;color:#cbcbcb!important;font-size:10px!important}</style><style>[_nghost-brs-c49]{width:340px;height:100vh}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-main[_ngcontent-brs-c49]   .logo[_ngcontent-brs-c49]{width:60%;margin-top:40px}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-main[_ngcontent-brs-c49]   .title[_ngcontent-brs-c49]{max-width:250px;color:#848484;font-family:"Lato","Helvetica Neue","Helvetica",sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:center;margin-top:24px}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-main[_ngcontent-brs-c49]   .login-btn[_ngcontent-brs-c49]{width:60%;padding:10px 15px;border-radius:2px;border:1px solid #00b8c2;background:#00bfd2;color:#fff;font-size:14px;text-align:center;transition:all .1s ease-in;cursor:pointer;margin-top:58px}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-main[_ngcontent-brs-c49]   .login-btn[_ngcontent-brs-c49]:hover{background:#01dccf;color:#fff}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-main[_ngcontent-brs-c49]   .login-btn[_ngcontent-brs-c49]:active, [_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-main[_ngcontent-brs-c49]   .login-btn.active[_ngcontent-brs-c49]{background:#617186;border-color:#617186}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-loader[_ngcontent-brs-c49]   .logo-wrap[_ngcontent-brs-c49]{height:50%;max-height:200px}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-loader[_ngcontent-brs-c49]   .logo-wrap[_ngcontent-brs-c49]   .logo[_ngcontent-brs-c49]{width:50%}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-loader[_ngcontent-brs-c49]   .logo-wrap[_ngcontent-brs-c49]   .loader[_ngcontent-brs-c49]{width:40px;height:40px;margin-top:14px}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-loader[_ngcontent-brs-c49]   .login-actions[_ngcontent-brs-c49]{height:50%;max-height:280px}[_nghost-brs-c49]   .login-c[_ngcontent-brs-c49]   .login-loader[_ngcontent-brs-c49]   .login-actions[_ngcontent-brs-c49]   .space[_ngcontent-brs-c49]{margin:20px}</style></head>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
 
-<!-- cover -->
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
-    <section>
-        <div class="jumbotron jumbotron-fluid text-center ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+  <title>SOCRATES: Text-based Human Search and Approach using a Robot Dog</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
 
-                        <h1> 
-                            <br> 
-                            SOCRATES: Text-based Human Search and Approach using a Robot Dog 
-                            <br>
-                        </h1>
-						<!-- <h5>
-							Author Names Omitted for Anonymous Review
-						</h5> -->
-                        <hr>
-                        <ul class="nav justify-content-center">
-                            <li>
-                                <a href="xxxx">
-                                    <img src="./assets/paper.jpeg" height="60px">
-                                        <h4><strong>Paper</strong></h4>
-                                </a>
-                            </li>
-                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li>
-                                <a href="xxxxx">
-                                    <img src="./assets/youtube.png" height="60px">
-                                        <h4><strong>Video</strong></h4>
-                                </a>
-                            </li> -->
-                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li>
-                                <a href="https://github.com/jeongeun980906/Zeroshot-Active-VIsual-Search">
-                                    <img src="./assets/github.png" height="60px">
-                                        <h4><strong>Code</strong></h4>
-                                </a>
-                            </li> -->
-                        </ul>
-                    </div>
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SOCRATES: Text-based Human Search and Approach using a Robot Dog</h1>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">Anonymous</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-
-        <div class="container">
-            <p style="text-align:center;">
-                <video id="v0" width="80%" playsinline="" autoplay="" muted="" loop="" controls="">
-                   <source src="./assets/intro.mp4" type="video/mp4">
-               </video>
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+                In this paper, we propose a SOCratic model for Robots Approaching humans based on TExt System (SOCRATES) focusing on the human search and approach based on free-form textual description;
+                the robot first searches for the target user, then the robot proceeds to approach in a human-friendly manner. In particular, textual descriptions are composed of appearance 
+                (e.g., "wearing white shirts with black hair") and location clues (e.g., "is a student who works with robots"). 
+                We initially present a Human Search Socratic Model that connects large pre-trained models in the language domain to solve the downstream task, 
+                which is searching for the target person based on textual descriptions. Then, we propose a hybrid learning-based framework for generating target-cordial robotic motion to approach a person, 
+                consisting of a learning-from-demonstration module and a knowledge distillation module. We validate the proposed searching module via simulation using a virtual mobile robot as well as through 
+                real-world experiments involving participants and the Boston Dynamics Spot robot. Furthermore, we analyze the properties of the proposed approaching framework with human participants based on 
+                the Robotic Social Attributes Scale (RoSAS).
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <h3><b>Abstract</b></h3>
-            <div class="row">
-                <div class="col-12 text-left">
-                    <p class="text-justify">
-                        In this paper, we propose a SOCratic model for Robots Approaching humans based on TExt System (SOCRATES) focusing on the human search and approach based on free-form textual description;
-                         the robot first searches for the target user, then the robot proceeds to approach in a human-friendly manner. In particular, textual descriptions are composed of appearance 
-                         (e.g., "wearing white shirts with black hair") and location clues (e.g., "is a student who works with robots"). 
-                         We initially present a Human Search Socratic Model that connects large pre-trained models in the language domain to solve the downstream task, 
-                         which is searching for the target person based on textual descriptions. Then, we propose a hybrid learning-based framework for generating target-cordial robotic motion to approach a person, 
-                         consisting of a learning-from-demonstration module and a knowledge distillation module. We validate the proposed searching module via simulation using a virtual mobile robot as well as through 
-                         real-world experiments involving participants and the Boston Dynamics Spot robot. Furthermore, we analyze the properties of the proposed approaching framework with human participants based on 
-                         the Robotic Social Attributes Scale (RoSAS).
-                    </p>
-                </div>
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Proposed method</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="publication-video">
+                <video poster="" id="video2" autoplay controls muted loop height="80%">
+                    <!-- Your video file here -->
+                    <source src="assets/starter.mp4" type="video/mp4">
+                  </video>
+                  <h2>
+                    The problem is separated into search and approach phases.
+                  </h2>
             </div>
         </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2><b>Full Video</b></h2>
-            TBD
-            <!-- <div class="col-12 text-center">
-                <div class="video_wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5XcU_dNL3lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2><b>Proposed Method</b></h2>
-            
-            <p style="text-align:center;">
-                <video id="v0" width="80%" playsinline="" autoplay="" muted="" loop="" controls="">
-                    <source src="./assets/starter.mp4" type="video/mp4">
-                </video>
-            </p>
-            The problem is separated into search and approach phases.
-
-            <h4>Assumption and Input of the System</h4>
-                <figure class="figure text-center">
-                    <img src="./assets/input.jpg" style="width: 50%">
-                    <figcaption class="figure-caption text-center">input</figcaption>
-                </figure>
-            
-            <h4>Human Search Socratic Model</h4>
-                <figure class="figure text-center">
-                    <img src="./assets/search.jpg" style="width: 80%">
-                    <figcaption class="figure-caption text-center">Human Search Socoratic Model</figcaption>
-                </figure>
-                The Human Search Socratic Model is composed of three key components: a large-language model, a vision-language model, and a waypoint generator. 
-                The large-language model takes the description of a target person and estimates the search prior, 
-                whereas the vision-language model processes images and descriptions to localize the target person. 
-                Lastly, the waypoint generator commands the robotic actions with the search prior and the detection results.
-            
-            <h4>Hybrid Learning Based Human Approach</h4>
-                <figure class="figure text-center">
-                    <img src="./assets/approach.jpg" style="width: 80%">
-                    <figcaption class="figure-caption text-center">Hybrid Learning Based Human Approach</figcaption>
-                </figure>
-                We propose a hybrid learning-based framework for generating a cordial approach motion to a target person. 
-                Target-friendly approach motions are an essential part of the "human search and approach" task since the robot has to move to a reachable position within the range of the 
-                target person without appearing threatening or distracting him/her. The proposed hybrid learning-based framework consists of two different modules: 
-                learning from demonstration (LfD) and knowledge distillation. Both modules estimate the reward function of the state space for a confiding approach trajectory and are 
-                combined to a final reward function. Next, the path planner conducts cost-aware planning based on the estimated reward function and sends actions (velocity commands) to the robot.
-            
-            
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2><b>Experiments</b></h2>
-            <h5>Environment Setting</h5>
+        <h4 class="title is-4">Assumption and Input of the System</h4>
             <figure class="figure text-center">
-                <img src="./assets/env.jpg" style="width: 40%">
-                <figcaption class="figure-caption text-center">Environment</figcaption>
-            </figure>
-            We use a Spot robot mounted with a Luxonis OAK-D-Pro camera. 
-            The real-world environment setting is a robotics lab environment, five different annotations of the floorplan are used to distinguish locations in the lab.
-
-            <h4>Realword Demonstrations</h4>
-            <b>Demonstration of the proposed method</b>
-            <p style="text-align:center;">
-                <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
-                    <source src="./assets/method.mp4" type="video/mp4">
-                </video>
-            </p>
-            <br>
-            <b>Result illustratations</b>
+                <img src="./assets/input.jpg" style="width: 60%">
+        </figure>
+        <h4 class="title is-4">Human Search Socratic Model</h4>
             <figure class="figure text-center">
-                <img src="./assets/demo.jpg" style="width: 70%">
-                <figcaption class="figure-caption text-center">Demonstrations</figcaption>
+                <img src="./assets/search.jpg" style="width: 80%">
             </figure>
-            Illustration of the Experimental Results. 
-            (a) shows the exemplary demonstrations of the proposed search module. The circles represent waypoints. 
-            (b) shows how the trajectories vary between methods. Circles represent waypoints and the circles with dashed lines represent the viewpoint that contained the false detection. 
-            (c) illustrates the proposed human approaching motion on gaze condition and how trajectories differ from a different method.
-            <br>
-
-            <h4>Search Demonstrations</h4>
-            <p style="text-align:center;">
-                <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
-                    <source src="./assets/demo1.mp4" type="video/mp4">
-                </video>
-            </p>
-            <br>
-            
-            <h4>Approach Demonstrations</h4>
-            <p style="text-align:center;">
-                <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
-                    <source src="./assets/demo2.mp4" type="video/mp4">
-                </video>
-            </p>
-            <br>
-            <b>Comparison</b>
-            <p style="text-align:center;">
-                <video id="v0" width="60%" playsinline="" autoplay="" muted="" loop="" controls="">
-                    <source src="./assets/demo3.mp4" type="video/mp4">
-                </video>
-            </p>
-
+        <h2>
+            The Human Search Socratic Model is composed of three key components: a large-language model, a vision-language model, and a waypoint generator. 
+            The large-language model takes the description of a target person and estimates the search prior, 
+            whereas the vision-language model processes images and descriptions to localize the target person. 
+            Lastly, the waypoint generator commands the robotic actions with the search prior and the detection results.
+        </h2>
+        <h4 class="title is-4">Hybrid Learning Based Human Approach</h4>
+            <figure class="figure text-center">
+                <img src="./assets/approach.jpg" style="width: 80%">
+            </figure>
+        <h2>
+            We propose a hybrid learning-based framework for generating a cordial approach motion to a target person. 
+            Target-friendly approach motions are an essential part of the "human search and approach" task since the robot has to move to a reachable position within the range of the 
+            target person without appearing threatening or distracting him/her. The proposed hybrid learning-based framework consists of two different modules: 
+            learning from demonstration (LfD) and knowledge distillation. Both modules estimate the reward function of the state space for a confiding approach trajectory and are 
+            combined to a final reward function. Next, the path planner conducts cost-aware planning based on the estimated reward function and sends actions (velocity commands) to the robot.
+        </h2>
         </div>
     </section>
 
-    <app-weava-root id="weava-root" class="weava" ng-version="12.2.16"></app-weava-root></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+    <!-- Paper video. -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+        <div class="container">
+            <!-- Paper video. -->
+            <h2 class="title is-3">Demonstration</h2>
+            <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                
+                <div class="publication-video">
+                    <video poster="" id="video2" autoplay controls muted loop height="100%">
+                        <!-- Your video file here -->
+                        <source src="assets/method.mp4"
+                        type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>  
+
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+          <div class="container">
+            <!-- Paper video. -->
+            <h2 class="title is-3">Experiment</h2>
+            <h4 class="title is-4">Environment Setting</h4>
+                <figure class="figure text-center">
+                    <img src="./assets/env.jpg" style="width: 60%">
+                </figure>
+                <h2>
+                    We use a Spot robot mounted with a Luxonis OAK-D-Pro camera. 
+                    The real-world environment setting is a robotics lab environment, five different annotations of the floorplan are used to distinguish locations in the lab.
+                </h2>
+
+            <h4 class="title is-4">Search Demonstrations</h4>
+            <div class="columns is-centered has-text-centered">
+                <div class="publication-video">
+                    <video poster="" id="video2" autoplay controls muted loop height="80%">
+                        <!-- Your video file here -->
+                        <source src="assets/demo1.mp4" type="video/mp4">
+                </div>
+            </div>
+            <h4 class="title is-4">Approach Demonstrations</h4>
+            <div class="columns is-centered has-text-centered">
+                <div class="publication-video">
+                    <video poster="" id="video2" autoplay controls muted loop height="80%">
+                        <!-- Your video file here -->
+                        <source src="assets/demo2.mp4" type="video/mp4">
+                </div>
+            </div>
+            <h4 class="title is-4">Approach Comparison</h4>
+            <div class="columns is-centered has-text-centered">
+                <div class="publication-video">
+                    <video poster="" id="video2" autoplay controls muted loop height="80%">
+                        <!-- Your video file here -->
+                        <source src="assets/demo3.mp4" type="video/mp4">
+                </div>
+            </div>
+        </section>
